@@ -94,7 +94,7 @@
                     if (dic[i] !== -1) {
                         list.children[i].style.backgroundColor = 'yellow';
                         let line = list.children[i].innerHTML;
-                        list.children[i].innerHTML = line.slice(0, dic[i]) + "<a style='color:red'>" + line.slice(dic[i], dic[i] + text.value.length) + "</a>" + line.slice(text.value.length, line.length);
+                        list.children[i].innerHTML = line.slice(0, dic[i]) + "<a style='color:red'>" + line.slice(dic[i], dic[i] + text.value.length) + "</a>" + line.slice(dic[i] + text.value.length, line.length);
                     }
                 }
                 error.innerHTML = "";
